@@ -71,6 +71,8 @@ ul[data-prep] input{width:18px;height:18px;vertical-align:-3px;margin-right:6px;
 .shot .pic{background:#f1ece5;position:relative;min-height:160px}
 .shot .pic img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
 .shot .pic svg{width:100%;height:100%;position:absolute;inset:0}
+.shot .pic.duo{display:grid;grid-template-columns:1fr 1fr}
+.shot .pic.duo img{position:static;height:100%}
 .shot .pic .cap{position:absolute;left:6px;bottom:6px;background:rgba(0,0,0,.55);color:#fff;font-size:11px;padding:1px 7px;border-radius:999px}
 .shot .body{padding:14px 16px}
 .shot .top{display:flex;align-items:flex-start;gap:10px}
@@ -92,6 +94,12 @@ ul[data-prep] input{width:18px;height:18px;vertical-align:-3px;margin-right:6px;
 .interlude b{color:var(--accent)}
 .interlude.hw{border-color:#f0c7a6}
 
+.deco{margin-bottom:14px;border-color:#f0c7a6}
+.deco-items{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.deco-items span{background:var(--hw-soft);border-radius:999px;padding:2px 10px;font-size:13px}
+.deco-steps{margin:0;padding-left:1.3em;font-size:14px}
+.deco-steps li{margin:4px 0}
+.deco-note{font-size:13px;color:var(--sub);margin:10px 0 0}
 /* composition ideas */
 .ideas{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
 .idea{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
@@ -110,6 +118,7 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
 @media (max-width:600px){
   .shot{grid-template-columns:1fr}
   .shot .pic{min-height:0;aspect-ratio:4/3}
+  .shot .pic.duo{aspect-ratio:2/1}
 }
 @media print{
   .progress,.reset{display:none}
@@ -165,7 +174,7 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
   <p class="lead">時間は目安です。佳純がぐずったら、②の「抱っこ」（S5）か休憩に飛んで立て直します。</p>
   <div class="timeline">
     <div class="tl break"><div class="time">0:00〜0:10</div><div class="what">到着・荷ほどき・場慣れ</div><div class="note">白ワンピは家で着せていくとラクです。スタジオで少し遊ばせ、カメラマンさんに慣れてもらう</div></div>
-    <div class="tl"><div class="time">0:10〜0:40</div><div class="what">① 家族・姉妹（白コーデ）</div><div class="note">座り → 立ち抱っこ → 姉妹 → 家族で絵本 → 組み合わせ（ママ/パパ×佳純・茜音）→ ママのポートフォリオ用</div></div>
+    <div class="tl"><div class="time">0:10〜0:40</div><div class="what">① 家族・姉妹（白コーデ）</div><div class="note">座り → 立ち抱っこ → 姉妹 → 家族で絵本 → 組み合わせ（ママ/パパ×佳純・茜音）→ SNSアイコン用</div></div>
     <div class="tl"><div class="time">0:40〜1:00</div><div class="what">② 佳純ソロ（白ワンピース）</div><div class="note">足型と花 → 絵本 → 選び取りカード → バナー → 抱っこ</div></div>
     <div class="tl break"><div class="time">1:00〜1:10</div><div class="what">着替え（チュールスカート）・おやつ・水分</div><div class="note">この間にケーキと椅子をセット</div></div>
     <div class="tl"><div class="time">1:10〜1:30</div><div class="what">③ ケーキ＆お人形（チュール）</div><div class="note">ケーキだけ → 椅子でケーキ → 姉妹でケーキ → お人形抱っこ</div></div>
@@ -184,12 +193,12 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
   </div>
 
   <article class="shot" data-id="F1">
-    <div class="pic"><img src="images/ref-0009.jpg" alt="長女のときのソファでの家族写真" loading="lazy"><span class="cap">参考：茜音のとき</span></div>
+    <div class="pic"><img src="images/ref-0067.jpg" alt="長女のときの床に座った家族写真" loading="lazy"><span class="cap">参考：茜音のとき</span></div>
     <div class="body">
       <div class="top"><span class="id">F1</span><h3>家族で座ってる写真</h3><span class="tag must">最優先</span></div>
       <ul>
-        <li><b>A. ソファに横並び</b>：パパ・ママの間に茜音、佳純はママのひざ。全員カメラ目線の1枚を最初に</li>
-        <li><b>B. 床にぺたんと座る</b>：パパのあぐらに茜音、ママのひざに佳純。少し引いて白い床を広く入れる</li>
+        <li><b>A. 床に並んで座る</b>：パパのあぐらに茜音、ママのひざに佳純。全員カメラ目線の1枚を最初に。少し引いて白い床を広く入れる</li>
+        <li><b>B. 椅子を使う</b>：木の椅子にママが座って佳純をひざに、横に茜音、後ろにパパが立つ（高さに差が出てまとまります）</li>
         <li><b>C. 寄り</b>：顔を近づけて佳純を囲む（参考：茜音のとき 0013 の寄り）</li>
       </ul>
       <div class="role">👀 目線は、カメラの真上でママかパパの片方が呼びかけると揃いやすいです</div>
@@ -212,16 +221,7 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
   </article>
 
   <article class="shot" data-id="F3">
-    <div class="pic">
-      <svg viewBox="0 0 240 180" role="img" aria-label="姉妹が並んで座り、お姉ちゃんが妹をぎゅっとする構図のイラスト">
-        <rect width="240" height="180" fill="#f4efe8"/><rect y="130" width="240" height="50" fill="#ebe4da"/>
-        <use href="#ane" x="88" y="70" width="38" height="76"/>
-        <use href="#baby" x="120" y="92" width="34" height="52"/>
-        <path d="M112 104 Q130 98 140 110" stroke="#e1d6c8" stroke-width="5" fill="none" stroke-linecap="round"/>
-        <text x="120" y="30" text-anchor="middle" font-size="13" fill="#a7656a">ぎゅー ♡</text>
-      </svg>
-      <span class="cap">イメージ</span>
-    </div>
+    <div class="pic"><img src="images/ill-sisters.jpg" alt="姉妹が並んで座り、お姉ちゃんが妹をぎゅっとする構図" loading="lazy"><span class="cap">イメージ</span></div>
     <div class="body">
       <div class="top"><span class="id">F3</span><h3>姉妹ショット</h3><span class="tag new">追加提案</span></div>
       <ul>
@@ -248,18 +248,7 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
   </article>
 
   <article class="shot" data-id="F5">
-    <div class="pic">
-      <svg viewBox="0 0 240 180" role="img" aria-label="ママと佳純、パパと佳純などの組み合わせを並べたイラスト">
-        <rect width="240" height="180" fill="#f4efe8"/>
-        <g font-size="16" font-weight="700" fill="#c98d6b">
-          <text x="10" y="22">①</text><use href="#mama" x="34" y="6" width="34" height="76"/><use href="#baby" x="50" y="24" width="20" height="30"/>
-          <text x="124" y="22">②</text><use href="#mama" x="148" y="6" width="34" height="76"/><use href="#baby" x="164" y="24" width="20" height="30"/><use href="#ane" x="184" y="36" width="22" height="46"/>
-          <text x="124" y="110">④</text><use href="#papa" x="148" y="94" width="34" height="76"/><use href="#baby" x="164" y="112" width="20" height="30"/><use href="#ane" x="184" y="124" width="22" height="46"/>
-          <text x="10" y="110">③</text><use href="#papa" x="34" y="94" width="34" height="76"/><use href="#baby" x="50" y="112" width="20" height="30"/>
-        </g>
-      </svg>
-      <span class="cap">イメージ</span>
-    </div>
+    <div class="pic duo"><img src="images/ill-mama-sisters.jpg" alt="ママと佳純、パパと佳純などの組み合わせを並べたイラスト" loading="lazy"><img src="images/ill-papa-lap.jpg" alt="ママと佳純、パパと佳純などの組み合わせを並べたイラスト" loading="lazy"><span class="cap">イメージ</span></div>
     <div class="body">
       <div class="top"><span class="id">F5</span><h3>組み合わせバリエーション</h3><span class="tag must">全部ほしい</span></div>
       <ul>
@@ -274,26 +263,16 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
   </article>
 
   <article class="shot" data-id="F6">
-    <div class="pic">
-      <svg viewBox="0 0 240 180" role="img" aria-label="ママがカメラを見て、子どもは後ろ姿で抱っこされている構図">
-        <rect width="240" height="180" fill="#f4efe8"/>
-        <g fill="#fff" stroke="#e1d6c8"><rect x="150" y="10" width="70" height="120"/></g>
-        <circle cx="110" cy="62" r="26" fill="#5a4a42"/><circle cx="110" cy="66" r="19" fill="#f2d7c3"/>
-        <path d="M60 180 Q66 110 110 100 Q154 110 160 180Z" fill="#e9dccb"/>
-        <circle cx="140" cy="104" r="16" fill="#4a3c35"/><ellipse cx="140" cy="134" rx="18" ry="20" fill="#fff" stroke="#e1d6c8"/>
-        <text x="40" y="30" font-size="11" fill="#a7656a">ママだけ顔出し</text>
-      </svg>
-      <span class="cap">イメージ</span>
-    </div>
+    <div class="pic"><img src="images/ill-sns.jpg" alt="ママがカメラを見て、子どもは後ろ姿で抱っこされている構図" loading="lazy"><span class="cap">イメージ</span></div>
     <div class="body">
-      <div class="top"><span class="id">F6</span><h3>ママのポートフォリオ用（子どもの顔は写さない）</h3><span class="tag new">追加</span></div>
+      <div class="top"><span class="id">F6</span><h3>SNSアイコン用（子どもの顔は写さない）</h3><span class="tag new">追加</span></div>
       <ul>
         <li><b>肩越し抱っこ</b>：佳純をママの肩にもたれさせて後ろ頭だけ、ママがカメラを見る／窓の外を見る</li>
         <li><b>手元＋ママの横顔</b>：佳純の小さな手を握るママ。子どもは手と髪だけ</li>
         <li><b>前ボケ</b>：手前に子どもの後ろ頭をぼかして入れ、ピントはママの顔</li>
         <li><b>ママだけ</b>：窓ぎわでママのみのカットも数枚（子どもが休憩中でOK）</li>
       </ul>
-      <div class="role">📸 カメラマンさんへ：SNS・ポートフォリオに使うため「子どもの顔が分からない」ことが条件です。時間がなければ ①→② の間のお着替えタイムに撮ってください</div>
+      <div class="role">📸 SNSのアイコンに使うので「子どもの顔が分からない」ことが条件です。時間がなければ ①→② の間のお着替えタイムに撮ってください</div>
       <label class="check"><input type="checkbox">撮れた</label>
     </div>
   </article>
@@ -411,17 +390,7 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
   </article>
 
   <article class="shot" data-id="C3">
-    <div class="pic">
-      <svg viewBox="0 0 240 180" role="img" aria-label="ケーキをはさんで姉妹が座る構図のイラスト">
-        <rect width="240" height="180" fill="#f8eeee"/><rect y="132" width="240" height="48" fill="#efe3e1"/>
-        <use href="#ane" x="52" y="72" width="38" height="76"/>
-        <rect x="104" y="112" width="34" height="22" rx="3" fill="#fff" stroke="#e5d6d3"/><rect x="114" y="134" width="14" height="8" fill="#e5d6d3"/>
-        <text x="121" y="106" text-anchor="middle" font-size="12" fill="#c49a5a">One</text>
-        <use href="#baby" x="148" y="94" width="34" height="52"/>
-        <text x="120" y="32" text-anchor="middle" font-size="13" fill="#a7656a">おめでとう！</text>
-      </svg>
-      <span class="cap">イメージ</span>
-    </div>
+    <div class="pic"><img src="images/ill-cake-sisters.jpg" alt="ケーキをはさんで姉妹が座る構図" loading="lazy"><span class="cap">イメージ</span></div>
     <div class="body">
       <div class="top"><span class="id">C3</span><h3>姉妹でケーキ</h3><span class="tag new">追加提案</span></div>
       <ul>
@@ -449,7 +418,7 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
 <div class="interlude hw">
   <b style="color:var(--hw)">🎃 デコ替え＆お着替え（約10分）</b><br>
   茜音・佳純 → 黒の服へ／机にハロウィンデコ<br>
-  <span style="color:var(--sub);font-size:14px">夫：机のデコ（かぼちゃ・ガーランドなど）／私：二人のお着替え。白い背景はそのままで、黒い服が引き立ちます。</span>
+  <span style="color:var(--sub);font-size:14px">夫：机のデコ（下の配置案どおりに）／私：二人のお着替え。白い背景はそのままで、黒い服が引き立ちます。</span>
 </div>
 
 <!-- ============ SCENE 4 ============ -->
@@ -460,24 +429,33 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
     <p class="goal">ハロウィン生まれの佳純だけの特別カット。最後のパートなので短く撮りきります。</p>
   </div>
 
+  <div class="box deco">
+    <h3>🎃 ハロウィン装飾の配置案（持っていくもの）</h3>
+    <p class="deco-items"><span>HALLOWEEN 壁掛け</span><span>コウモリのステッカー</span><span>黒いガーゼ布</span><span>黒いテーブルクロス</span><span>かぼちゃ（大・小）</span><span>おばけのぬいぐるみ</span><span>キャンディのクッション</span><span>花のアレンジ</span><span>ドライフラワー</span><span>キャンドル</span><span>骸骨</span></p>
+    <ol class="deco-steps">
+      <li><b>壁</b>：HALLOWEEN 壁掛けを机の真ん中の上に。コウモリは片側から窓のほうへ斜めに「飛んでいく」ように、大小まぜて7〜9匹。反対側の上の角に黒いガーゼを垂らして、左右のバランスをとる</li>
+      <li><b>机</b>：黒いクロスを床まで垂らす。白いスタジオで黒が締まり、黒い服の二人ともなじみます</li>
+      <li><b>高いものは両端に</b>：片側に花のアレンジ、反対側にキャンドル2本とドライフラワー。<b>真ん中は低くあけて</b>、子どもの顔の後ろをすっきりさせる</li>
+      <li><b>かぼちゃは大・中・小の3つ組</b>で、机の上の両端に。<b>塗料が付くので、子どもの手が届かない奥に置き、床には置かない</b>。おばけと骸骨は端の脇役に（骸骨も奥に）</li>
+      <li><b>キャンディのクッション</b>は机の前の床へ。佳純のおすわり場所にしたり、茜音に抱えてもらったり</li>
+    </ol>
+    <p class="deco-note">⚠️ キャンドルは火をつけずに飾りだけ。ステッカーやテープを壁に貼ってよいか、スタジオに確認しておくと安心です</p>
+    <h3 style="margin-top:14px">✨ 足すならこんなアイデアも</h3>
+    <ul class="tight">
+      <li><b>佳純の誕生日カード「25.10.31」</b>：おととしハロウィンに飾った「24 10 31」のカードのように。ハロウィン生まれが一目で伝わります</li>
+      <li><b>「1」の数字バルーン</b>（黒かオレンジ）：ハロウィンと1歳のお誕生日が1枚で伝わります</li>
+      <li><b>布や紙のお菓子バケツ</b>：茜音の「トリック・オア・トリート」用に（中は空か、包み紙のお菓子をいくつか）</li>
+      <li><b>クモの巣の綿</b>：机の角や花のアレンジに少しだけ</li>
+    </ul>
+  </div>
+
   <article class="shot" data-id="H1">
-    <div class="pic">
-      <svg viewBox="0 0 240 180" role="img" aria-label="ハロウィンデコの机の前に佳純が座る構図のイラスト">
-        <rect width="240" height="180" fill="#f6f1ea"/>
-        <path d="M30 30 Q75 52 120 30 Q165 52 210 30" stroke="#2a2320" fill="none"/>
-        <g fill="#e8772e"><path d="M48 38 l6 12 l6 -10z"/><path d="M90 44 l6 12 l6 -12z"/><path d="M140 44 l6 12 l6 -12z"/><path d="M182 38 l6 12 l6 -10z"/></g>
-        <rect x="40" y="96" width="160" height="10" rx="2" fill="#a07a58"/><rect x="50" y="106" width="8" height="50" fill="#a07a58"/><rect x="182" y="106" width="8" height="50" fill="#a07a58"/>
-        <use href="#pumpkin" x="52" y="72" width="34" height="28"/><use href="#pumpkin" x="152" y="76" width="26" height="22"/>
-        <rect x="96" y="66" width="44" height="30" rx="3" fill="#2a2320"/><text x="118" y="80" text-anchor="middle" font-size="7" fill="#fff">Born on</text><text x="118" y="90" text-anchor="middle" font-size="7" fill="#e8772e">Halloween</text>
-        <use href="#baby-hw" x="104" y="124" width="30" height="46"/>
-      </svg>
-      <span class="cap">イメージ</span>
-    </div>
+    <div class="pic duo"><img src="images/ill-hw-table.jpg" alt="ハロウィンデコの机の前に佳純が座る構図" loading="lazy"><img src="images/ill-hw-cushion.jpg" alt="キャンディのクッションに抱きつく寄り" loading="lazy"><span class="cap">イメージ</span></div>
     <div class="body">
       <div class="top"><span class="id">H1</span><h3>デコ机と佳純</h3><span class="tag">ハロウィン</span></div>
       <ul>
-        <li>デコした机の前（または机の上の低い位置）に佳純がおすわり。机全体が入る引きで</li>
-        <li>小さいかぼちゃを持たせて寄り</li>
+        <li>デコした机の前の床で、キャンディのクッションのそばに佳純がおすわり。壁掛けから机まで全体が入る引きで</li>
+        <li>おばけのぬいぐるみやキャンディのクッションを抱かせて寄り（かぼちゃは触らせない）</li>
         <li>💡「Born on Halloween」「1st Halloween Birthday」などのボードを入れると、誕生日の意味が伝わります</li>
       </ul>
       <label class="check"><input type="checkbox">撮れた</label>
@@ -485,20 +463,11 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
   </article>
 
   <article class="shot" data-id="H2">
-    <div class="pic">
-      <svg viewBox="0 0 240 180" role="img" aria-label="黒い服の姉妹がかぼちゃを持って並ぶ構図のイラスト">
-        <rect width="240" height="180" fill="#f6f1ea"/><rect y="134" width="240" height="46" fill="#ece5db"/>
-        <use href="#ane-hw" x="74" y="70" width="40" height="80"/>
-        <path d="M80 70 L94 44 L108 70 Z" fill="#2a2320"/>
-        <use href="#baby-hw" x="124" y="96" width="34" height="52"/>
-        <use href="#pumpkin" x="104" y="130" width="30" height="24"/>
-      </svg>
-      <span class="cap">イメージ</span>
-    </div>
+    <div class="pic"><img src="images/ill-hw-sisters.jpg" alt="黒い服の姉妹がおばけのぬいぐるみをはさんで並ぶ構図" loading="lazy"><span class="cap">イメージ</span></div>
     <div class="body">
       <div class="top"><span class="id">H2</span><h3>ハロウィン姉妹</h3><span class="tag new">追加提案</span></div>
       <ul>
-        <li>黒コーデの二人がかぼちゃを間に並んでおすわり</li>
+        <li>黒コーデの二人が、おばけのぬいぐるみを間に並んでおすわり</li>
         <li>茜音が佳純にお菓子をあげる「トリック・オア・トリート」のやりとりを連写</li>
         <li>魔女帽子などの小物があれば茜音に</li>
       </ul>
@@ -507,17 +476,7 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
   </article>
 
   <article class="shot" data-id="H3">
-    <div class="pic">
-      <svg viewBox="0 0 240 180" role="img" aria-label="ハロウィンデコの前で家族4人が並ぶ構図のイラスト">
-        <rect width="240" height="180" fill="#f6f1ea"/><rect y="140" width="240" height="40" fill="#ece5db"/>
-        <use href="#pumpkin" x="20" y="120" width="30" height="24"/><use href="#pumpkin" x="194" y="124" width="26" height="20"/>
-        <use href="#papa" x="62" y="44" width="44" height="100"/>
-        <use href="#mama" x="134" y="46" width="44" height="98"/>
-        <use href="#ane-hw" x="104" y="88" width="30" height="58"/>
-        <use href="#baby-hw" x="70" y="72" width="26" height="40"/>
-      </svg>
-      <span class="cap">イメージ</span>
-    </div>
+    <div class="pic"><img src="images/ill-hw-family.jpg" alt="ハロウィンデコの前で家族4人が並ぶ構図" loading="lazy"><span class="cap">イメージ</span></div>
     <div class="body">
       <div class="top"><span class="id">H3</span><h3>ハロウィン家族</h3><span class="tag new">追加提案</span></div>
       <ul>
@@ -529,18 +488,11 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
   </article>
 
   <article class="shot" data-id="H4">
-    <div class="pic">
-      <svg viewBox="0 0 240 180" role="img" aria-label="小さな手とかぼちゃの寄りのイラスト">
-        <rect width="240" height="180" fill="#f6f1ea"/>
-        <use href="#pumpkin" x="70" y="58" width="100" height="86"/>
-        <ellipse cx="78" cy="110" rx="20" ry="14" fill="#f2d7c3"/><ellipse cx="162" cy="112" rx="20" ry="14" fill="#f2d7c3"/>
-      </svg>
-      <span class="cap">イメージ</span>
-    </div>
+    <div class="pic duo"><img src="images/ill-hw-hands.jpg" alt="小さな手でおばけのぬいぐるみを抱える寄り" loading="lazy"><img src="images/ill-hw-candy.jpg" alt="小さな手で包み紙のお菓子を持つ寄り" loading="lazy"><span class="cap">イメージ</span></div>
     <div class="body">
       <div class="top"><span class="id">H4</span><h3>小物の寄り（ディテール）</h3></div>
       <ul>
-        <li>小さな手でかぼちゃを持つ寄り、足元、デコだけのカット</li>
+        <li>小さな手でおばけのぬいぐるみやお菓子を持つ寄り、足元、デコだけのカット</li>
         <li>アルバムのすき間を埋める写真になります</li>
       </ul>
       <label class="check"><input type="checkbox">撮れた</label>
@@ -554,16 +506,7 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
   <p class="lead">F1〜F3 で時間が余ったら、または撮影の合間に。上から順におすすめです。</p>
   <div class="ideas">
     <div class="idea">
-      <div class="art">
-        <svg viewBox="0 0 240 180" role="img" aria-label="4人が床に寝転んで頭を寄せ、上から撮る構図">
-          <rect width="240" height="180" fill="#f4efe8"/>
-          <g transform="translate(120 90)"><use href="#papa" x="-18" y="12" width="36" height="76"/></g>
-          <g transform="translate(120 90) rotate(180)"><use href="#mama" x="-18" y="12" width="36" height="76"/></g>
-          <g transform="translate(120 90) rotate(90)"><use href="#ane" x="-14" y="12" width="28" height="56"/></g>
-          <g transform="translate(120 90) rotate(-90)"><use href="#baby" x="-12" y="12" width="24" height="36"/></g>
-          <text x="10" y="20" font-size="11" fill="#7a6f66">上から見た図</text>
-        </svg>
-      </div>
+      <div class="art"><img src="images/ill-overhead.jpg" alt="4人が床に寝転んで頭を寄せ、上から撮る構図" loading="lazy"></div>
       <div class="txt"><h3>① 寝転び俯瞰</h3><p>4人が床に寝転んで頭を真ん中に寄せ、カメラマンさんは脚立か椅子の上から。1歳でもじっとしなくていいので撮りやすい構図です。</p></div>
     </div>
     <div class="idea">
@@ -571,18 +514,7 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
       <div class="txt"><h3>② 紙吹雪・花びら</h3><p>茜音のときいちばん盛り上がった構図（参考 0188〜0192）。茜音に投げる係をしてもらうと、笑顔が自然に出ます。最後に撮ると片付けもラクです。</p></div>
     </div>
     <div class="idea">
-      <div class="art">
-        <svg viewBox="0 0 240 180" role="img" aria-label="家族4人が手をつなぎ窓に向かって歩く後ろ姿の構図">
-          <rect width="240" height="180" fill="#f4efe8"/>
-          <g fill="#fff" stroke="#e1d6c8"><rect x="30" y="16" width="56" height="100"/><rect x="92" y="16" width="56" height="100"/><rect x="154" y="16" width="56" height="100"/></g>
-          <rect y="126" width="240" height="54" fill="#ebe4da"/>
-          <use href="#papa" x="48" y="60" width="40" height="90"/>
-          <use href="#ane" x="90" y="92" width="28" height="56"/>
-          <use href="#mama" x="122" y="60" width="40" height="90"/>
-          <use href="#baby" x="152" y="62" width="22" height="34"/>
-          <path d="M80 108 Q90 116 98 112 M112 112 Q120 116 130 108" stroke="#c9b9a6" stroke-width="3" fill="none"/>
-        </svg>
-      </div>
+      <div class="art"><img src="images/ill-backview.jpg" alt="家族4人が手をつなぎ窓に向かって歩く後ろ姿の構図" loading="lazy"></div>
       <div class="txt"><h3>③ 窓に向かう後ろ姿</h3><p>パパ・茜音・ママで手をつなぎ、ママは佳純を抱っこ。顔が写らなくても家族の雰囲気が残る1枚です。</p></div>
     </div>
     <div class="idea">
@@ -594,15 +526,7 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
       <div class="txt"><h3>⑤ 足もとショット</h3><p>パパの脚に抱きつく佳純を低い位置から。茜音も反対側の脚にくっつけば姉妹版になります（参考 0086〜0089）。</p></div>
     </div>
     <div class="idea">
-      <div class="art">
-        <svg viewBox="0 0 240 180" role="img" aria-label="パパが茜音を肩車し、ママが佳純を抱っこする構図">
-          <rect width="240" height="180" fill="#f4efe8"/><rect y="146" width="240" height="34" fill="#ebe4da"/>
-          <use href="#papa" x="64" y="62" width="40" height="90"/>
-          <use href="#ane" x="70" y="22" width="28" height="56"/>
-          <use href="#mama" x="134" y="62" width="40" height="90"/>
-          <use href="#baby" x="140" y="82" width="26" height="40"/>
-        </svg>
-      </div>
+      <div class="art"><img src="images/ill-shoulder.jpg" alt="パパが茜音を肩車し、ママが佳純を抱っこする構図" loading="lazy"></div>
       <div class="txt"><h3>⑥ 肩車＋抱っこ</h3><p>パパが茜音を肩車、ママが佳純を抱っこ。高さに差が出て、動きのある楽しい1枚になります。</p></div>
     </div>
   </div>
@@ -638,7 +562,7 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
     <div class="box">
       <h3>🎃 ハロウィン</h3>
       <ul class="tight" data-prep>
-        <li><label><input type="checkbox"> 机のデコ（かぼちゃ・ガーランド）</label></li>
+        <li><label><input type="checkbox"> 机のデコ（かぼちゃ・壁掛け・コウモリなど）</label></li>
         <li><label><input type="checkbox"> ボード（Born on Halloween など）</label></li>
         <li><label><input type="checkbox"> 魔女帽子など頭の小物</label></li>
         <li><label><input type="checkbox"> 大人用の黒い小物（任意）</label></li>

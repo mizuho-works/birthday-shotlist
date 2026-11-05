@@ -116,6 +116,19 @@ ul[data-prep] input{width:18px;height:18px;vertical-align:-3px;margin-right:6px;
 footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
 .reset{background:none;border:1px solid var(--line);border-radius:999px;padding:4px 14px;color:var(--sub);font:inherit;font-size:12px;cursor:pointer;margin-top:8px}
 
+/* reference preview */
+.ref{font:inherit;font-size:.95em;color:var(--accent);background:var(--accent-soft);border:0;border-radius:6px;padding:0 6px;margin:0 1px;cursor:pointer;text-decoration:underline dotted;text-underline-offset:3px}
+.ref:hover{background:#f0dccd}
+.pic img,.art img{cursor:zoom-in}
+#lb{border:0;padding:0;background:transparent;max-width:min(92vw,720px);width:100%;overflow:visible}
+#lb::backdrop{background:rgba(30,24,20,.82)}
+#lb figure{margin:0;position:relative}
+#lb img{width:100%;max-height:78vh;object-fit:contain;border-radius:12px;background:#222;display:block}
+#lb figcaption{color:#fff;text-align:center;font-size:14px;margin-top:8px}
+#lb .lb-btn{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.88);color:var(--ink);font-size:22px;cursor:pointer;line-height:1}
+#lb .lb-prev{left:8px}#lb .lb-next{right:8px}
+#lb .lb-close{position:absolute;top:-14px;right:-6px;width:40px;height:40px;border-radius:50%;border:0;background:#fff;color:var(--ink);font-size:22px;cursor:pointer;line-height:1;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+
 @media (max-width:600px){
   .shot{grid-template-columns:1fr}
   .shot .pic{min-height:0;aspect-ratio:4/3}
@@ -199,7 +212,7 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
       <ul>
         <li><b>A. 床に並んで座る</b>：パパのあぐらに茜音、ママのひざに佳純。全員カメラ目線の1枚を最初に。少し引いて白い床を広く入れる</li>
         <li><b>B. 椅子を使う</b>：木の椅子にママが座って佳純をひざに、横に茜音、後ろにパパが立つ（高さに差が出てまとまります）</li>
-        <li><b>C. 寄り</b>：顔を近づけて佳純を囲む（参考：茜音のとき 0013 の寄り）</li>
+        <li><b>C. 寄り</b>：顔を近づけて佳純を囲む（茜音のときの <button type="button" class="ref" data-refs="0013">参考 0013</button> の寄り）</li>
       </ul>
       <div class="role">目線は、カメラの真上でママかパパの片方が呼びかけると揃いやすいです</div>
       <label class="check"><input type="checkbox">撮れた</label>
@@ -213,7 +226,7 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
       <ul>
         <li><b>A. 白壁の前で全身</b>：パパが佳純を抱っこ、ママは茜音と手つなぎ。全員正面</li>
         <li><b>B. 見つめ合い</b>：パパ・ママ・茜音が佳純を見て笑う（カメラ目線なしで自然に）</li>
-        <li><b>C. 窓ぎわの逆光</b>：ふんわり明るい横長カット（参考 0080）</li>
+        <li><b>C. 窓ぎわの逆光</b>：ふんわり明るい横長カット（<button type="button" class="ref" data-refs="0080">参考 0080</button>）</li>
         <li><b>D. 茜音を抱っこ担当に交代</b>：ママが茜音、パパが佳純を抱っこして2組並ぶ</li>
       </ul>
       <label class="check"><input type="checkbox">撮れた</label>
@@ -252,7 +265,7 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
     <div class="body">
       <div class="top"><span class="id">F5</span><h3>組み合わせバリエーション</h3><span class="tag must">全部ほしい</span></div>
       <ul>
-        <li><b>① ママ＋佳純</b>：窓ぎわで抱っこ、見つめ合い（参考 0104）</li>
+        <li><b>① ママ＋佳純</b>：窓ぎわで抱っこ、見つめ合い（<button type="button" class="ref" data-refs="0104">参考 0104</button>）</li>
         <li><b>② ママ＋佳純＋茜音</b>：ママが佳純を抱っこ、茜音はママの脚にくっつく</li>
         <li><b>③ パパ＋佳純</b>：高い高い／パパの胸で抱っこ</li>
         <li><b>④ パパ＋佳純＋茜音</b>：床に座ったパパのひざに姉妹</li>
@@ -304,7 +317,7 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
     <div class="body">
       <div class="top"><span class="id">S2</span><h3>絵本を読んでる写真</h3></div>
       <ul>
-        <li>床に絵本を数冊広げて、自由にめくらせる（参考 0014〜0017）</li>
+        <li>床に絵本を数冊広げて、自由にめくらせる（<button type="button" class="ref" data-refs="0014,0015,0016,0017">参考 0014〜0017</button>）</li>
         <li>横顔で絵本をのぞきこむ寄りカットも</li>
       </ul>
       <label class="check"><input type="checkbox">撮れた</label>
@@ -331,7 +344,7 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
       <ul>
         <li>白壁に「Happy Birthday」のタペストリーを貼り、その下でおすわり。<b>縦長で、頭の上に余白を広めに</b></li>
         <li>布の両端を少したるませると、やわらかい雰囲気に。まわりにコウモリを数匹足せば、ハロウィン生まれらしさも出せます</li>
-        <li>壁にタッチする後ろ姿も、茜音のとき（0158〜0161）のようにかわいく撮れます</li>
+        <li>壁にタッチする後ろ姿も、茜音のとき（<button type="button" class="ref" data-refs="0158,0159,0160,0161">0158〜0161</button>）のようにかわいく撮れます</li>
         <li>余裕があれば、最後に茜音も入って姉妹で</li>
       </ul>
       <label class="check"><input type="checkbox">撮れた</label>
@@ -383,7 +396,7 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
     <div class="body">
       <div class="top"><span class="id">C1</span><h3>ケーキだけのショット</h3><span class="tag must">先に撮る</span></div>
       <ul>
-        <li>佳純が触る前に撮ります。窓の光と影を入れたカットが素敵でした（0152〜0155）</li>
+        <li>佳純が触る前に撮ります。窓の光と影を入れたカットが素敵でした（<button type="button" class="ref" data-refs="0152,0153,0154,0155">0152〜0155</button>）</li>
         <li>真横・ななめ上・トッパーの寄りの3カット</li>
       </ul>
       <label class="check"><input type="checkbox">撮れた</label>
@@ -396,7 +409,7 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
       <div class="top"><span class="id">C2</span><h3>椅子でケーキショット</h3></div>
       <ul>
         <li>木の椅子にケーキをのせ、横に佳純を立たせる（つかまり立ち）／おすわり</li>
-        <li><b>引きの全身</b> → <b>ケーキに手を伸ばす後ろ姿</b>（参考 0137） → <b>顔の寄り</b></li>
+        <li><b>引きの全身</b> → <b>ケーキに手を伸ばす後ろ姿</b>（<button type="button" class="ref" data-refs="0137">参考 0137</button>） → <b>顔の寄り</b></li>
       </ul>
       <label class="check"><input type="checkbox">撮れた</label>
     </div>
@@ -419,9 +432,9 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
     <div class="body">
       <div class="top"><span class="id">C4</span><h3>お人形抱っこ</h3></div>
       <ul>
-        <li>椅子にすわって、お人形をぎゅっと（参考 0181〜0185）。窓ぎわの光で</li>
-        <li>床でおすわり＋お人形の寄り（参考 0040）</li>
-        <li>最後に<b>お人形だけ椅子に座らせた「余韻カット」</b>（参考 0187）</li>
+        <li>椅子にすわって、お人形をぎゅっと（<button type="button" class="ref" data-refs="0181,0182,0183,0184,0185">参考 0181〜0185</button>）。窓ぎわの光で</li>
+        <li>床でおすわり＋お人形の寄り（<button type="button" class="ref" data-refs="0040">参考 0040</button>）</li>
+        <li>最後に<b>お人形だけ椅子に座らせた「余韻カット」</b>（<button type="button" class="ref" data-refs="0187">参考 0187</button>）</li>
       </ul>
       <label class="check"><input type="checkbox">撮れた</label>
     </div>
@@ -525,7 +538,7 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
     </div>
     <div class="idea">
       <div class="art"><img src="images/ref-0087.jpg" alt="長女のときのパパの脚に抱きつく写真" loading="lazy"></div>
-      <div class="txt"><h3>④ 足もとショット</h3><p>パパの脚に抱きつく佳純を低い位置から。茜音も反対側の脚にくっつけば姉妹版になります（参考 0086〜0089）。</p></div>
+      <div class="txt"><h3>④ 足もとショット</h3><p>パパの脚に抱きつく佳純を低い位置から。茜音も反対側の脚にくっつけば姉妹版になります（<button type="button" class="ref" data-refs="0086,0087,0088,0089">参考 0086〜0089</button>）。</p></div>
     </div>
     <div class="idea">
       <div class="art"><img src="images/ill-shoulder.jpg" alt="パパが茜音を肩車し、ママが佳純を抱っこする構図" loading="lazy"></div>
@@ -588,6 +601,16 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
   <button class="reset" type="button" id="reset">チェックをリセット</button>
 </footer>
 
+<dialog id="lb" aria-label="写真のプレビュー">
+  <figure>
+    <img alt="">
+    <button type="button" class="lb-btn lb-prev" aria-label="前の写真">‹</button>
+    <button type="button" class="lb-btn lb-next" aria-label="次の写真">›</button>
+    <button type="button" class="lb-close" aria-label="閉じる">×</button>
+    <figcaption></figcaption>
+  </figure>
+</dialog>
+
 <script>
 (function(){
   var KEY = 'kasumi-1st-shotlist-v1';
@@ -631,6 +654,55 @@ footer{padding:32px 0 56px;text-align:center;color:var(--sub);font-size:12px}
     shots.forEach(function(s){ s.classList.remove('done'); });
     if (memo) memo.value = '';
     update();
+  });
+
+  // 参考写真のプレビュー（ページ遷移なし）
+  var lb = document.getElementById('lb');
+  var lbImg = lb.querySelector('img'), lbCap = lb.querySelector('figcaption');
+  var lbPrev = lb.querySelector('.lb-prev'), lbNext = lb.querySelector('.lb-next');
+  var items = [], idx = 0;
+  function show(){
+    var it = items[idx];
+    lbImg.src = it.src; lbImg.alt = it.cap;
+    lbCap.textContent = it.cap + (items.length > 1 ? '（' + (idx + 1) + ' / ' + items.length + '）' : '');
+    lbPrev.hidden = lbNext.hidden = items.length < 2;
+  }
+  function open(list, start){
+    items = list; idx = start || 0; show();
+    if (lb.showModal) lb.showModal(); else lb.setAttribute('open', '');
+  }
+  function step(d){ idx = (idx + d + items.length) % items.length; show(); }
+  lbPrev.addEventListener('click', function(e){ e.stopPropagation(); step(-1); });
+  lbNext.addEventListener('click', function(e){ e.stopPropagation(); step(1); });
+  lb.querySelector('.lb-close').addEventListener('click', function(){ lb.close(); });
+  lb.addEventListener('click', function(e){ if (e.target === lb) lb.close(); });
+  document.addEventListener('keydown', function(e){
+    if (!lb.open) return;
+    if (e.key === 'ArrowLeft') step(-1);
+    if (e.key === 'ArrowRight') step(1);
+  });
+  var tx = null;
+  lb.addEventListener('touchstart', function(e){ tx = e.touches[0].clientX; }, {passive:true});
+  lb.addEventListener('touchend', function(e){
+    if (tx === null || items.length < 2) return;
+    var dx = e.changedTouches[0].clientX - tx; tx = null;
+    if (Math.abs(dx) > 40) step(dx < 0 ? 1 : -1);
+  });
+
+  document.querySelectorAll('.ref').forEach(function(b){
+    b.addEventListener('click', function(){
+      open(b.dataset.refs.split(',').map(function(n){
+        return { src: 'images/ref-' + n + '.jpg', cap: '茜音のとき ' + n };
+      }));
+    });
+  });
+  document.querySelectorAll('.pic, .art').forEach(function(box){
+    var imgs = Array.prototype.slice.call(box.querySelectorAll('img'));
+    imgs.forEach(function(img, i){
+      img.addEventListener('click', function(){
+        open(imgs.map(function(m){ return { src: m.getAttribute('src'), cap: m.alt }; }), i);
+      });
+    });
   });
 
   update();
